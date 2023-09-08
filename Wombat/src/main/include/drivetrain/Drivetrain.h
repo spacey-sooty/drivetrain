@@ -7,6 +7,9 @@
 #include "Gearbox.h"
 
 #include <units/time.h>
+#include <units/voltage.h>
+
+#include <frc/XboxController.h>
 
 namespace wom {
   // TODO PID
@@ -29,7 +32,7 @@ namespace wom {
 
   class Drivetrain : public behaviour::HasBehaviour {
    public:
-    Drivetrain(DrivetrainConfig *config);
+    Drivetrain(DrivetrainConfig *config, frc::XboxController &driver);
     ~Drivetrain();
 
     DrivetrainConfig *GetConfig(); DrivetrainState GetState(); 
@@ -38,12 +41,13 @@ namespace wom {
 
     void OnStart();
     void OnUpdate(units::second_t dt);
-
    protected:
 
    private:
     DrivetrainConfig *_config;
     DrivetrainState _state;
+    frc::XboxController &_driver;
+    units::volt_t maxVolts = 9_V;
   };
 }
 
