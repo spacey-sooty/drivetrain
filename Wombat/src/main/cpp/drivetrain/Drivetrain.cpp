@@ -2,6 +2,7 @@
 
 using namespace wom;
 using namespace frc;
+using namespace units;
 
 Drivetrain::Drivetrain(DrivetrainConfig *config, XboxController &driver): _config(config), _driver(driver) {}
 Drivetrain::~Drivetrain() {}
@@ -15,7 +16,7 @@ void Drivetrain::OnStart() {
   std::cout << "Starting Tank" << std::endl;
 }
 
-void Drivetrain::OnUpdate(units::second_t dt) {
+void Drivetrain::OnUpdate(second_t dt) {
   switch(_state) {
     case DrivetrainState::kIdle:
       break;
