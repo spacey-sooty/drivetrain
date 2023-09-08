@@ -5,7 +5,7 @@ pluginManagement {
     mavenCentral()
 
     gradlePluginPortal()
-    String frcYear = '2023'
+    String frcYear = '2024'
     File frcHome
     if (OperatingSystem.current().isWindows()) {
       String publicFolder = System.getenv('PUBLIC')
@@ -31,4 +31,4 @@ pluginManagement {
 }
 
 include 'wombat'
-rootProject.name = '2023-ChargedUp'
+rootProject.name = 'Drivetrain'
