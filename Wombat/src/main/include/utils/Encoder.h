@@ -8,7 +8,7 @@
 #include <ctre/phoenix.h>
 #include <frc/DutyCycleEncoder.h>
 
-#include "Util.h"
+#include "utils/Util.h"
 
 namespace wom {
   class Encoder {

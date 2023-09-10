@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "behaviour/HasBehaviour.h"
-#include "Gearbox.h"
+#include "utils/Gearbox.h"
 
 #include <units/time.h>
 #include <units/voltage.h>
