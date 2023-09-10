@@ -1,3 +1,5 @@
+/target
+*.exe
+*.out
 .vscode
 .gradle
-
