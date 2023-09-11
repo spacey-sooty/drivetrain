@@ -1,12 +1,10 @@
 #pragma once
 
-#include "behaviour/HasBehaviour.h"
-
 #include <units/time.h>
 
 namespace wom {
   template<typename ConfigType, typename StateType>
-  class Subsystem: public behaviour::HasBehaviour {
+  class Subsystem {
    public:
     Subsystem(ConfigType *config);
     ~Subsystem();
